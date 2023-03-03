@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    FILE  *fptr;
+    char str[20], str1[20];
+    printf("Enter your name:");
+    scanf("%s",&str1);
+    fptr = fopen("File manager:/internal storage/DCMI/File-1", "a");
+    fprintf(fptr,"%s",str1);
+    fclose(fptr);
+}
